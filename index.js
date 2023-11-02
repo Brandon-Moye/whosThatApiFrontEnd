@@ -5,5 +5,7 @@ fetch('https://whos-that-api.onrender.com/api/whosThatApi/Pokemon?pokemon=annihi
     const outputElement = document.getElementById('pokemonData')
     outputElement.textContent = JSON.stringify(data, null, 2)
     pokemonNameOnDom = document.getElementById('pokemonName')
+    pokemonNationalDexNumOnDom = document.getElementById('pokemonNationalDexNum')
     pokemonName.textContent = JSON.stringify(data["Pokemon Details"]["pokemonName"])
+    pokemonNationalDexNumOnDom.textContent = JSON.stringify(data["Pokemon Details"]["nationalDexNum"])
 })
