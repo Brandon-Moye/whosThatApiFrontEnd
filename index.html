@@ -4,22 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Whos That API!</title>
+    <title>Who's That API!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=VT323&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Get Pokemon Data!</h1>
-    <input type="text" id="pokemonInput" placeholder="Its Blissey Time" />
-    <button id="searchButton">Search</button>
-    <br />
-    <img id="pokemonImage" src="" alt="" />
-    <h2 id="pokemonName"></h2>
-    <h2 id="nationalDexNum"></h2>
-    <p id="species"></p>
-    <p id="type"></p>
-    <p id="secondaryTyping"></p>
-    <p id="eggGroup"></p>
-    <p id="eggGroupTwo"></p>
-
+    <div class="titleAndSearch">
+      <h1>Who's That API!</h1>
+      <input type="text" id="pokemonInput" placeholder="Its Blissey Time" />
+      <button id="searchButton">Search</button>
+    </div>
+    <div class="pokemonCardContainer">
+      <img id="pokemonImage" src="" alt="" />
+      <h2 id="pokemonName" class="cardInfo"></h2>
+      <h2 class="cardLabel nationalNumLabel">National No.</h2>
+      <p id="nationalDexNum" class="cardInfo"></p>
+      <p class="cardLabel">Species</p>
+      <p id="species" class="cardInfo"></p>
+      <p class="cardLabel">Typing(s)</p>
+      <p id="type" class="cardInfo"></p>
+      <p id="secondaryTyping" class="cardInfo"></p>
+      <p class="cardLabel">Egg Groups(s)</p>
+      <p id="eggGroup" class="cardInfo"></p>
+      <p id="eggGroupTwo" class="cardInfo"></p>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

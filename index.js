@@ -3,7 +3,7 @@ const pokemonInput = document.getElementById('pokemonInput')
 
 function searchForPokemon() {
     const pokemonName = document.getElementById('pokemonInput').value;
-    const url = `https://whos-that-api.onrender.com/api/whosThatApi/Pokemon?pokemon=${pokemonName}&password=mudkip-rules`
+    const url = `https://whos-that-api.onrender.com/api/whosThatApi/Pokemon?pokemon=mudkip&password=mudkip-rules`
     fetch(url, {
         method: 'GET',
         headers: {
@@ -43,9 +43,11 @@ function searchForPokemon() {
     pokemonInput.value = '';
 }
 
-searchButton.addEventListener('click', searchForPokemon)
-pokemonInput.addEventListener('keydown', e => {
-    if(e.key === 'Enter') {
-        searchForPokemon()
-    }
-})
+searchForPokemon()
+
+// searchButton.addEventListener('click', searchForPokemon)
+// pokemonInput.addEventListener('keydown', e => {
+//     if(e.key === 'Enter') {
+//         searchForPokemon()
+//     }
+// })
