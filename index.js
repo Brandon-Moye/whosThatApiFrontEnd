@@ -3,7 +3,7 @@ const pokemonInput = document.getElementById('pokemonInput')
 
 function searchForPokemon() {
     const pokemonName = document.getElementById('pokemonInput').value;
-    const url = `https://whos-that-api.onrender.com/api/whosThatApi/Pokemon?pokemon=dratini&password=mudkip-rules`
+    const url = `https://whos-that-api.onrender.com/api/whosThatApi/Pokemon?pokemon=${pokemonName}&password=mudkip-rules`
     fetch(url, {
         method: 'GET',
         headers: {
@@ -19,7 +19,6 @@ function searchForPokemon() {
     })
     .then(data => {
         document.getElementById('pokemonImage').src = data['Pokemon Details']['pokemonImage']
-    
         function setTextContentById(id, value) {
             const element = document.getElementById(id)
             if (element && element !== 'pokemonImage') {
@@ -45,9 +44,9 @@ function searchForPokemon() {
 
 searchForPokemon()
 
-// searchButton.addEventListener('click', searchForPokemon)
-// pokemonInput.addEventListener('keydown', e => {
-//     if(e.key === 'Enter') {
-//         searchForPokemon()
-//     }
-// })
+searchButton.addEventListener('click', searchForPokemon)
+pokemonInput.addEventListener('keydown', e => {
+    if(e.key === 'Enter') {
+        searchForPokemon()
+    }
+})
