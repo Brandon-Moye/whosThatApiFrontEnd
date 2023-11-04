@@ -1,0 +1,46 @@
+body > * {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'VT323', monospace;
+}
+
+.titleAndSearch {
+    margin-bottom: 1rem;
+}
+
+.pokemonCardContainer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: lightcoral;
+    width: 95vw;
+    height: 75vh;
+    max-width: 45rem;
+}
+
+#pokemonImage {
+    grid-column: 1/-1; 
+    grid-row: 1;
+    width: 50vw;
+    max-width: 15rem;
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+.cardLabel {
+    grid-column: 1;
+    font-size: 1.25rem;
+}
+
+.cardInfo {
+    font-size: 1.25rem;
+}
+
+#pokemonName {
+    font-size: 2rem;
+
+}
+
+#species {
+    grid-column: 2/4;
+}
