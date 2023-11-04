@@ -8,8 +8,15 @@
 
 
 .webpageTitle {
-    background-color: red;
+    background-color: 	#f00000;
     text-align: center;
+    font-size: 3rem;
+    
+}
+
+.blackPokeballElement {
+    height: 1.5rem;
+    background-color: black;
     margin-bottom: 1rem;
 }
 
@@ -18,6 +25,23 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+.pokemonSearchContainer > * {
+    border: none;
+    outline: none;
+}
+
+#pokemonInput {
+    font-size: 1.5rem;
+    height: 1.5rem;
+    border-bottom: 1px solid black;
+}
+
+#searchButton {
+    font-size: 1.5rem;
+    box-shadow: 2px 1px 1px 1px black;
+
 }
 
 .pokemonCardContainer {
@@ -47,17 +71,18 @@
 
 .cardLabel {
     grid-column: 1;
-    font-size: 1.10rem;
+    font-size: 1.5rem;
     padding-left: 1rem;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .cardInfo {
-    font-size: 1.10rem;
+    font-size: 1.5rem;
 }
 
 #pokemonName {
-    font-size: 2rem;
+    font-size: 2.25rem;
     padding-left: 1rem;
 
 
