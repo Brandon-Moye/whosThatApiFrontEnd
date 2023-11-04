@@ -3,7 +3,7 @@ const pokemonInput = document.getElementById('pokemonInput')
 
 function searchForPokemon() {
     const pokemonName = document.getElementById('pokemonInput').value;
-    const url = `https://whos-that-api.onrender.com/api/whosThatApi/Pokemon?pokemon=mudkip&password=mudkip-rules`
+    const url = `https://whos-that-api.onrender.com/api/whosThatApi/Pokemon?pokemon=annihilape&password=mudkip-rules`
     fetch(url, {
         method: 'GET',
         headers: {
