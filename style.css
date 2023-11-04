@@ -1,10 +1,23 @@
-body > * {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-family: 'VT323', monospace;
+  }
+
+
+.webpageTitle {
+    background-color: red;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-.titleAndSearch {
+.pokemonSearchContainer {
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .pokemonCardContainer {
@@ -12,10 +25,13 @@ body > * {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    background-color: lightcoral;
+    background-color: lightgray;
     width: 95vw;
     height: 75vh;
     max-width: 45rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    align-items: center;
 }
 
 #pokemonImage {
@@ -25,19 +41,25 @@ body > * {
     max-width: 15rem;
     justify-self: center;
     margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0px black;
 }
 
 .cardLabel {
     grid-column: 1;
-    font-size: 1.25rem;
+    font-size: 1.10rem;
+    padding-left: 1rem;
+    font-weight: bold;
 }
 
 .cardInfo {
-    font-size: 1.25rem;
+    font-size: 1.10rem;
 }
 
 #pokemonName {
     font-size: 2rem;
+    padding-left: 1rem;
+
 
 }
 
